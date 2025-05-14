@@ -69,9 +69,16 @@ print(car2.start("stopped"))
 class Driver:
     uniform = "Blue"
 
-    def __init__(self, age):
+    def __init__(self, name, age):
         self.age = age
-        pass
+        self.name = name
+        
+    
+    def nationality(self, country):
+        return (f"{self.name} of {self.age} years of age, with {self.uniform} uniform, is from {country}")
+    
+driver1= Driver("Johnson", "35")
+print(driver1.nationality("Jamaica"))
 
 
 
