@@ -76,6 +76,6 @@ class Voter:
         else:
             raise ValueError("Age must 18+")
 
-voter1 = Voter("Jane", no)
+voter1 = Voter("Jane", 24)
 print(voter1._name)
 print(voter1._age)
